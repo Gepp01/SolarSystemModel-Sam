@@ -9,3 +9,17 @@
 
 # Kuiper Belt
 # Sedna
+
+#-----------------------------------------------------------------------------
+# In order of distance
+
+# 1. Ceres
+
+# 2. Pluto
+# 3. Haumea
+# 4. Makemake
+# 5. Eris
+# 6. Sedna
+# 7. Haumea
+
+
