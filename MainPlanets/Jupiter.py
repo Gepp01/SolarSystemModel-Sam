@@ -1,4 +1,4 @@
-r_jupiter = 69,911  # km, volumetric mean radius of jupiter
+r_jupiter = 69911  # km, volumetric mean radius of jupiter
 
 # Orbital Parameters
 a_jupiter = 816.363e6  # km
