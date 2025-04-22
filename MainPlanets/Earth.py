@@ -1,6 +1,6 @@
 # solo test using earth
 
-r_earth = 6371.0  # km
+r_earth = 6371.0  # km, volumetric mean radius of Earth
 
 # Orbital Parameters
 a_earth = 152.1e6  # km
