@@ -1,4 +1,4 @@
-r_Makemake = 620.0  # km, volumetric mean radius of Makemake
+r_Makemake = 715.0  # km, volumetric mean radius of Makemake
 
 # Orbital Parameters
 a_Makemake = 7892.185266e6  # km
