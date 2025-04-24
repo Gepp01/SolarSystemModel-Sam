@@ -70,15 +70,33 @@ def make_traces(planet_list):
 
 # Helper: build a complete figure
 
+# def build_fig(subset, rng, title):
+#     fig = go.Figure(data=make_traces(subset))
+#     fig.update_layout(
+#         scene=dict(
+#             xaxis=dict(range=[-rng,rng], title='X (AU)'),
+#             yaxis=dict(range=[-rng,rng], title='Y (AU)'),
+#             zaxis=dict(range=[-rng,rng], title='Z (AU]'),
+#             aspectmode='data'
+#         ),
+#         margin=dict(l=0,r=0,t=40,b=0), title=title
+#     )
+#     return fig
+
 def build_fig(subset, rng, title):
     fig = go.Figure(data=make_traces(subset))
     fig.update_layout(
         scene=dict(
             xaxis=dict(range=[-rng,rng], title='X (AU)'),
             yaxis=dict(range=[-rng,rng], title='Y (AU)'),
-            zaxis=dict(range=[-rng,rng], title='Z (AU]'),
-            aspectmode='data'
+            zaxis=dict(range=[-rng,rng], title='Z (AU)'),
+            aspectmode='cube',  # Change from 'data' to 'cube' for equal scaling but better use of space
+            camera=dict(eye=dict(x=1.5, y=1.5, z=1.5)),  # Adjust camera position
         ),
-        margin=dict(l=0,r=0,t=40,b=0), title=title
+        margin=dict(l=10, r=10, t=50, b=10),  # Reduced margins
+        title=title,
+        height=1400,  # Set explicit height
+        width=1400,  # Allow width to be responsive
+        autosize=True,  # Enable autosize
     )
     return fig
